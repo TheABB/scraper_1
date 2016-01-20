@@ -1,6 +1,6 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
-
+print 'hello, world.'
 # import scraperwiki
 # import lxml.html
 #
