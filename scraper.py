@@ -3,6 +3,7 @@
 print 'hello, world.'
 urltoscrape ='http://twitter.com/TheABB'
 print urltoscrape
+myage = 5
 # import scraperwiki
 # import lxml.html
 #
