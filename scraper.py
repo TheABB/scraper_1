@@ -1,7 +1,7 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
 print "hello, world."
-urltoscrape = "http://twitter.com/TheABB"
+urltoscrape = "X"
 print urltoscrape
 urltoscrape = urltoscrape+"p1"
 print urltoscrape
