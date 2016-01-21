@@ -5,12 +5,17 @@ import scraperwiki
 import lxml.html
 #
 # # Read in a page
+#change url to scrape different page
 html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sittard/")
 print html
-#
+#remember html above is only a descriptive label, and 'html' has no instrinsic meaning in the line above
+# next line imports the lxml.html library 
+import lxml.html
+# use the .fromstrong function to turn html into a lxml 'object', a variable called 'root'
 # # Find something on the page using css selectors
-# root = lxml.html.fromstring(html)
-# root.cssselect("div[align='left']")
+root = lxml.html.fromstring(html)
+tds = root.cssselect("div[align='left']")
+print tds
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
