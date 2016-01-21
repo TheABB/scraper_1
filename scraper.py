@@ -8,6 +8,8 @@ print myvar
 print myage
 print mylist
 listlength = len(mylist)
+stringlength = len(myvar)
+numlength = len(myage)
 # import scraperwiki
 # import lxml.html
 #
