@@ -7,7 +7,7 @@ import lxml.html
 # # Read in a page
 #change url to scrape different page
 html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sittard/")
-print html
+#print html
 #remember html above is only a descriptive label, and 'html' has no instrinsic meaning in the line above
 # next line imports the lxml.html library 
 import lxml.html
