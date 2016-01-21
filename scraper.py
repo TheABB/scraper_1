@@ -3,16 +3,14 @@
 import scraperwiki
 import lxml.html
 #change url to scrape different page
-html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sittard/")
+html = scraperwiki.scrape("http://defenddigitalme.com/2016/01/fixing-the-national-pupil-database-security-choice-and-transparency/")
 #print html
 #remember html above is only a descriptive label, and 'html' has no instrinsic meaning in the line above
 # next line imports the lxml.html library 
-import lxml.html
 # use the .fromstrong function to turn html into a lxml 'object', a variable called 'root'
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
 tds = root.cssselect("div[align='left']")
-print tds
 for td in tds:
   record ={"cell" : td.text}
   print record
