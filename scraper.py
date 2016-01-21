@@ -12,10 +12,6 @@ html = scraperwiki.scrape("http://defenddigitalme.com/2016/01/fixing-the-nationa
 root = lxml.html.fromstring(html)
 # next line looks for anything in an <a href= ...> tag and puts in a list called 'tds'
 tds = root.cssselect("a") #key tag!!
-for td in tds:
-  record ={"cell" : td.text}
-  print record
-  scraperwiki.sqlite.save(["cell"], record)
 # note that 'cell' is just an arbitrary label
 indexno = 0
 for td in tds:
