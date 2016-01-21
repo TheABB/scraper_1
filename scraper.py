@@ -10,6 +10,9 @@ print mylist
 listlength = len(mylist)
 stringlength = len(myvar)
 numlength = len(myage)
+print listlength
+print stringlength
+print numlength
 # import scraperwiki
 # import lxml.html
 #
