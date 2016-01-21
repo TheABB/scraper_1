@@ -1,7 +1,7 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
 myvar = "Hello, it said."
-myage = 10
+myage = ten
 mylist = ['this', 'that', 'theother']
 mynumlist = [3,6,9,12]
 print myvar
