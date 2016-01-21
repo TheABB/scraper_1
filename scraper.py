@@ -17,7 +17,7 @@ indexno = 0
 for td in tds:
   indexno = indexno + 1
   record = {"td":td.text, "index" : indexno}
-  scraperwiki.sqlite.save(["index"]. record)
+  scraperwiki.sqlite.save(["index"], record)
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
