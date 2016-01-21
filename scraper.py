@@ -10,7 +10,8 @@ html = scraperwiki.scrape("http://defenddigitalme.com/2016/01/fixing-the-nationa
 # use the .fromstrong function to turn html into a lxml 'object', a variable called 'root'
 # # Find something on the page using css selectors
 root = lxml.html.fromstring(html)
-tds = root.cssselect("div[align='left']")
+# next line looks for anything in an <a href= ...> tag and puts in a list called 'tds'
+tds = root.cssselect("a") #key tag!!
 for td in tds:
   record ={"cell" : td.text}
   print record
