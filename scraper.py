@@ -1,23 +1,12 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
-myvar = "Hello, it said."
-myage = ten
-mylist = ['this', 'that', 'theother']
-mynumlist = [3,6,9,12]
-print myvar
-print myage
-print mylist
-listlength = len(mylist)
-stringlength = len(myvar)
-numlength = len(myage)
-print listlength
-print stringlength
-print numlength
-# import scraperwiki
-# import lxml.html
+
+import scraperwiki
+import lxml.html
 #
 # # Read in a page
-# html = scraperwiki.scrape("http://foo.com")
+html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sittard/")
+print html
 #
 # # Find something on the page using css selectors
 # root = lxml.html.fromstring(html)
