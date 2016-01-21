@@ -1,10 +1,7 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
-
 import scraperwiki
 import lxml.html
-#
-# # Read in a page
 #change url to scrape different page
 html = scraperwiki.scrape("http://uk.soccerway.com/teams/netherlands/fortuna-sittard/")
 #print html
@@ -16,7 +13,16 @@ import lxml.html
 root = lxml.html.fromstring(html)
 tds = root.cssselect("div[align='left']")
 print tds
-#
+for td in tds:
+  record ={"cell" : td.text}
+  print record
+  scraperwiki.sqlite.save(["cell"], record)
+# note that 'cell' is just an arbitrary label
+indexno = 0
+for td in tds:
+  indexno = indexno + 1
+  record = {"td":td.text, "index" : indexno}
+  scraperwiki.sqlite.save(["index"]. record)
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
