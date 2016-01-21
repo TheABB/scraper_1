@@ -1,10 +1,13 @@
 # This is a template for a Python scraper on morph.io (https://morph.io)
 # including some code snippets below that you should find helpful
-print "hello, world."
-urltoscrape = "X"
-print urltoscrape
-urltoscrape = urltoscrape+"p1"
-print urltoscrape
+print "Hello, it said."
+myage = 10
+mylist = ['this', 'that', 'theother']
+mynumlist = [3,6,9,12]
+print myvar
+print myage
+print mylist
+listlength = len(mylist)
 # import scraperwiki
 # import lxml.html
 #
