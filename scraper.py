@@ -3,7 +3,7 @@
 import scraperwiki
 import lxml.html
 #change url to scrape different page
-html = scraperwiki.scrape("http://defenddigitalme.com/2016/01/fixing-the-national-pupil-database-security-choice-and-transparency/")
+html = scraperwiki.scrape("http://www.parliament.uk/mps-lords-and-offices/mps/?search_term=wales")
 #print html
 #remember html above is only a descriptive label, and 'html' has no instrinsic meaning in the line above
 # next line imports the lxml.html library 
